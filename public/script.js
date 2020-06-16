@@ -85,7 +85,7 @@ function draw(){
   //change visualisation in response to bank
   box.drawBox();
   box2.drawBox();
-  sparkle.draw();
+  // sparkle.draw();
 }
 
 function step(){

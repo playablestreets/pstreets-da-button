@@ -15,6 +15,9 @@ class Sparkle{
 
   }
   
+  
+
+
   announce(){
     console.log( this );
   }
