@@ -79,17 +79,21 @@ p{
 }
 
 .playbutton{
+  box-sizing: border-box;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  /* bottom: 50vh; */
+  margin: auto;
+  width: 50%;
+  right: 25vw;
+  bottom: 10vh;
   padding: 10px;
   z-index: 265;
-  min-width: 100px;
-  min-height: 100px;
+  /* min-width: 150px; */
+  /* min-height: 100px; */
   line-height: 100px;
   background-color: rgb(255, 72, 0);
   font-size: 24px;
-  margin: 25px;
+  /* margin: 25px; */
   border-radius: 20px;
   border-style:  solid;
   border-color: white;
