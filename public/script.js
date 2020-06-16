@@ -2,6 +2,9 @@ const boxSize = 100;
 const box = new Box(0,0,0);
 const box2 = new Box(0,0,0);
 
+// const sparkle = new Sparkle(0, 0, 100);
+// sparkle.scale = 10;
+
 box.rotate = [120, 45,  45];
 box2.rotate = [90, -45,  -45];
 
@@ -65,7 +68,7 @@ function setup(){
   canvas.style('z-index', -1);
 
   windowResized();
-  // blendMode(SCREEN);
+  blendMode(DIFFERENCE);
   noErase();
 }
 
@@ -82,6 +85,7 @@ function draw(){
   //change visualisation in response to bank
   box.drawBox();
   box2.drawBox();
+  sparkle.draw();
 }
 
 function step(){

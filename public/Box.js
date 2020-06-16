@@ -41,7 +41,7 @@ class Box{
     push();
     translate(0, 0, -boxSize/2);
     // fill(color1);
-    fill(221,253,153);
+    fill(221,253,255);
     plane(100);
     pop();
 
@@ -67,7 +67,7 @@ class Box{
     rotateY(radians(-90));
     translate(0, 0, boxSize/2);
     // fill(color2);
-    fill(171,252,  0);
+    fill(0,0,  0);
     plane(100);
     pop();
     
@@ -85,7 +85,7 @@ class Box{
     rotateX(radians(-90));
     translate(0, 0, boxSize/2);
     // fill(color2);
-    fill(171,252,  0);
+    // fill(171,252,  0);
     plane(100);
     pop();
 
@@ -94,7 +94,7 @@ class Box{
     rotateX(radians(90));
     translate(0, 0, boxSize/2);
     // fill(color1);
-    fill(243,250,254);
+    fill(243,0,254);
     plane(100);
     pop();
 
@@ -102,7 +102,7 @@ class Box{
     pop();
 
     noStroke();
-    fill(10,10,10, 0.5);
+    fill(10,0,255, 0.6);
     plane(1000);
   }
 }
