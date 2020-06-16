@@ -91,7 +91,7 @@ p{
   /* min-width: 150px; */
   /* min-height: 100px; */
   line-height: 100px;
-  background-color: rgb(255, 72, 0);
+  background-color: rgb(94, 206, 240);
   font-size: 24px;
   /* margin: 25px; */
   border-radius: 20px;
@@ -107,10 +107,10 @@ p{
 }
 
 .playbutton:hover{
-  background-color: rgb(245, 115, 40);
+  background-color: rgb(143, 216, 238);
 }
 .playbutton:active{
-  background-color:  rgb(240, 137, 77);  
+  background-color:  rgb(207, 239, 247);  
   font-size: 28px;
   /* border-width: 10px; */
 }
@@ -124,20 +124,11 @@ p{
   /* background-color: greenyellow; */
   /* background: radial-gradient(ellipse at top, red, transparent), */
             /* radial-gradient(ellipse at bottom, blue, transparent); */
-  background: radial-gradient(ellipse at bottom, green, greenyellow),
-    radial-gradient(ellipse at top, darkgreen, transparent);
+  background: radial-gradient(ellipse at bottom, rgb(119, 0, 103), rgb(238, 116, 222)),
+    radial-gradient(ellipse at top, rgb(55, 5, 235), transparent);
   /* animation: slam 15s linear infinite alternate; */
   z-index: -1;
   overflow: hidden;
    
 }
 
-
-  @keyframes slam{
-    from{
-      filter: hue-rotate(20deg);
-    }
-    to{
-      filter: hue-rotate(-120deg);
-    }  
-  } 
