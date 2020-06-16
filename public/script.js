@@ -40,7 +40,7 @@ function loadBank(){
 
 		let player = new Tone.Player({
       "url" : fileString,
-      "fadeOut": 2,
+      "fadeOut": 5,
       "volume": -6
 
 			// "loop" : true,
