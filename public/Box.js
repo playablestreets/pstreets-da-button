@@ -103,6 +103,7 @@ class Box{
 
     noStroke();
     fill(10,0,255, 0.6);
+    rotateX(frameCount * 0.01);
     plane(1000);
   }
 }

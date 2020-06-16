@@ -77,8 +77,6 @@ function draw(){
   box2.scale = (getElapsed() - lastTouched) / 30 + 100.1;
   // box2.scale = (getElapsed() - lastTouched + 1) * 0.12 ;
 
-
-
   // clear();
   // background('rgba(0,0,0, 0)');
 
