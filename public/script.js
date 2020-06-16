@@ -1,7 +1,9 @@
 const boxSize = 100;
 const box = new Box(0,0,0);
 const box2 = new Box(0,0,0);
-box2.rotate = [45, 83,  297];
+
+box.rotate = [120, 45,  45];
+box2.rotate = [90, -45,  -45];
 
 
 var players = [];
@@ -63,15 +65,20 @@ function setup(){
   canvas.style('z-index', -1);
 
   windowResized();
-  // blendMode(SCREEN);
+  blendMode(SCREEN);
+  noErase();
 }
 
 function draw(){
-  box.scale = (getElapsed() - lastTouched) * 0.1 +  10;
-  box2.scale = (getElapsed() - lastTouched) * 0.1 +  10;
+  box.scale = (getElapsed() - lastTouched) / 20  + 100;
+  box2.scale = (getElapsed() - lastTouched) / 30 + 100.1;
+  // box2.scale = (getElapsed() - lastTouched + 1) * 0.12 ;
 
 
-  clear();
+
+  // clear();
+  // background('rgba(0,0,0, 0)');
+
   //change visualisation in response to bank
   box.drawBox();
   box2.drawBox();
