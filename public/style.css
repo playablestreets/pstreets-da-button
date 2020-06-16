@@ -78,22 +78,21 @@ p{
   /* margin: 0; */
 }
 
-.playbutton{
+.button{
   box-sizing: border-box;
-  position: absolute;
-  /* bottom: 50vh; */
-  margin: auto;
-  width: 50%;
-  right: 25vw;
-  bottom: 10vh;
+  /* position: absolute; */
+  /* margin: auto; */
+  /* right: 10px; */
+  /* bottom: 10px; */
+  width: 25%;
   padding: 10px;
   z-index: 265;
-  /* min-width: 150px; */
+  min-width: 150px;
   /* min-height: 100px; */
-  line-height: 100px;
+  line-height: 80px;
   background-color: rgb(94, 206, 240);
-  font-size: 24px;
-  /* margin: 25px; */
+  font-size: 64px;
+  margin: 30px;
   border-radius: 20px;
   border-style:  solid;
   border-color: white;
@@ -101,18 +100,27 @@ p{
   color: white;
   text-align: center;
   font-weight: bolder;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px rgb(159, 224, 255);
   /* outline: 5px white dotted;  inner stroke */
   /* outline-offset: -5px;  negative border width + outline width */
 }
 
-.playbutton:hover{
+.button:hover{
   background-color: rgb(143, 216, 238);
 }
-.playbutton:active{
+.button:active{
   background-color:  rgb(207, 239, 247);  
   font-size: 28px;
   /* border-width: 10px; */
+}
+
+.ui{
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
+  display: flex;
+  flex-direction: row-reverse;
+  
 }
 
 .bg{
