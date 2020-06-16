@@ -1,29 +1,28 @@
 const boxSize = 100;
 const box = new Box(0,0,0);
 
-// var player = new Tone.Player({
-//   "url" : "./audio/FWDL.[mp3|ogg]",
-//   "loop" : true,
-//   "loopStart" : 0.5,
-//   "loopEnd" : 0.7,
-// }).toMaster();
-
 var players = [];
-// var mp3Locations = [];
 var currentStep = 0;
 var numSteps = 6
 var bank = 0;
 var numBanks = 8;
-
+var bankLengths = [176, 91, 16, 31, 12, 161, 11, 16];
 
 function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
 }
 
 function loadBank(){
+
+  numSteps = bankLengths[bank];
+  
+  console.log(numSteps);
+
   for(var i = 1; i <= numSteps; i++){
     let fileString = "../assets/" + (bank + 1) +"/00" + i + ".mp3";
     let player = new Tone.Player(fileString);
+    //TODO this isn't sticking
+    player.volume = -12;
     player.toMaster();
     players.push(player);
     // mp3Locations.push("../assets/1/00" + i + ".mp3")
@@ -64,7 +63,6 @@ function step(){
 
 function bankNext(){
   console.log('bank next');
-
 
   //for each in players
   //dispose
