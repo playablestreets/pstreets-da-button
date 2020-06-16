@@ -3,18 +3,25 @@ class Box{
     this.x =  x;
     this.y =  y;
     this.z =  z;
+    this.scale = 2;
+    this.rotate = [0,0,0];
   }
 
   drawBox(){
+
+    strokeWeight(10);
+    stroke(255);
+
     push();
     translate(this.x,this.y,this.z);
-    rotateX(frameCount * 0.01);
-    rotateY(frameCount * 0.01);
+    rotateX(frameCount * 0.005 + this.rotate[0]);
+    rotateY(frameCount * 0.005 + this.rotate[1]);
+    scale(this.scale);
     
     //front (1)
     push();
     translate(0, 0, -boxSize/2);
-    fill(255, 0, 0);
+    fill(255, 255, 0);
     plane(100);
     pop();
 
@@ -22,14 +29,14 @@ class Box{
     push();
     rotateY(radians(90));
     translate(0, 0, boxSize/2);
-    fill(0, 255, 0);
+    fill(0, 255, 255);
     plane(100);
     pop();
 
     //back(3)
     push();
     translate(0, 0, boxSize/2);
-    fill(0, 0, 255);
+    fill(255, 0, 255);
     plane(100);
     pop();
 
