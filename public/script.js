@@ -65,7 +65,7 @@ function setup(){
   canvas.style('z-index', -1);
 
   windowResized();
-  blendMode(SCREEN);
+  // blendMode(SCREEN);
   noErase();
 }
 
