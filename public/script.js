@@ -3,6 +3,7 @@ var currentStep = 0;
 var numSteps = 6;
 var currentBank = 0;
 var numBanks = 8;
+var bankTitles = ["song one", "song two", "song three", "song four", "song five", "song six", "song seven", "song eight"]
 var bankLengths = [ 176, 91, 16, 31, 12, 161, 11, 16 ];
 
 var startTime = new Date();
@@ -18,7 +19,7 @@ function windowResized() {
 }
 
 function loadBank() {
-  //todo implement loading bar
+	//todo implement loading bar
 	numSteps = bankLengths[currentBank];
 
 	console.log(numSteps);
@@ -42,7 +43,9 @@ function loadBank() {
 		player.toMaster();
 		players.push(player);
 		// mp3Locations.push("../assets/1/00" + i + ".mp3")
-	}
+  }
+  
+  document.getElementById("title").innerHTML = bankTitles[currentBank];
 }
 
 function setup() {
@@ -57,12 +60,19 @@ function setup() {
 
 	windowResized();
 	blendMode(DIFFERENCE);
-	noErase();
+  noErase();
 }
 
 function draw() {
-	drawViz();
+  drawViz();
+  drawTitle();
 }
+
+function drawTitle(){
+  fill(200,200,200);
+  text(bankTitles[currentBank], 10, 30);
+}
+
 
 function step() {
 	currentStep++;

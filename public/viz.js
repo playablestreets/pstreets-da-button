@@ -35,10 +35,19 @@ function nineteeneightyeight(){
   // sparkle.draw();
 }
 
+function simpleCircle(){
+  background(205, 102, 94);
+  fill(240,240,240);
+  noStroke();
+  if(mouseIsPressed)
+    sphere(160);
+  else
+    sphere(40);
+}
+
 
 function drawViz(id){
-
   //switch visualisation here
-  nineteeneightyeight();
-
+  // nineteeneightyeight();
+  simpleCircle();
 }
