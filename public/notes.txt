@@ -1,0 +1,10 @@
+- tone down 
+- loading indicator.
+- tim.playableweb.com
+
+bug
+- two notes at a time on chrome
+
+done
+- break viz into function calls
+- cross fade shorter
