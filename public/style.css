@@ -127,7 +127,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* disable coloured hilighting */
+::selection {
+	color: none;
+	background: none;
+}
+/* For Mozilla Firefox */
+::-moz-selection {
+	color: none;
+	background: none;
+}
 :root {
 	color: rgb(236, 236, 236);
 	/* box-sizing: border-box; */
